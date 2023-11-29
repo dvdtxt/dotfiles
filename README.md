@@ -1,2 +1,10 @@
-# dotfiles
-Semi-awesome dotfiles
+# DVDotfiles
+My Semi-awesome dotfiles
+
+**Terminal:**
+  + Alacritty
+  + Tmux
+  + Fish
+  + Ranger
+**Otros**
+  + ?
