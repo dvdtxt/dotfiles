@@ -6,5 +6,6 @@ My Semi-awesome dotfiles
   + Tmux
   + Fish
   + Ranger
+    
 **Otros**
   + ?
