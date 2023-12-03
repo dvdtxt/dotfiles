@@ -6,7 +6,7 @@ My Semi-awesome dotfiles
 
 Instalar lo necesario:
 ```
-sudo apt isntall -y batcat exa ranger fish tmux alacritty 
+sudo apt install -y bat exa ranger fish tmux alacritty 
 ```
 
 Instalar la fuente para la terminal:
