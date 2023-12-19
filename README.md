@@ -5,12 +5,20 @@ My Semi-awesome dotfiles
 
 
 Instalar lo necesario:
+```bash
+#1 Aplicaciones y otros
+sudo apt isntall -y batcat exa ranger fish tmux alacritty 
+#2 Despues de Fish, OMF
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 ```
-sudo apt install -y bat exa ranger fish tmux alacritty 
+
+Istalar tema en OMF:
+```bash
+omf install agnoster
 ```
 
 Instalar la fuente para la terminal:
-``` 
+```bash
 sudo mkdir /usr/share/fonts/BitStreamVeraSansMonoNF | sudo unzip BitstreamVeraSansMono.zip -d /usr/share/fonts/BitStreamVeraSansMonoNF/ | fc-cache -f -v 
 ```
 
