@@ -1,7 +1,7 @@
 # DVDotfiles
 My Semi-awesome dotfiles
 
-![Ejemplo](/images/fish_example.png)
+![Ejemplo](images/fish_example.png)
 
 
 Instalar lo necesario:
