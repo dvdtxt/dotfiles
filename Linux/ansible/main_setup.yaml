@@ -1,0 +1,42 @@
+# Install all my basics on a server
+- name : Installing basic tools on Ubuntu Server
+  hosts: # Group of hosts
+  become: true
+  tasks:
+    - name: Update APT Cache
+      apt:
+        update_cache: yes
+    - name: Install required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - gnupg
+        - software-properties-common
+        - nano
+        - wireguard
+        - fish
+        # Add more Packages if needed
+    - name: Add Docker GPG Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+    - name: Add Docker repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+        state: present
+    - name: Update APT Cache
+      apt:
+        update_cache: yes
+    - name: Install Docker Packages
+      apt:
+        name: docker-ce
+        state: present
+    - name: Enable and start Docker Service
+      service:
+        name: docker
+        state: started
+        enabled: yes
